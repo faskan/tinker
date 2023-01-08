@@ -1,4 +1,5 @@
 /spring-boot-v3/.gradle/
 /spring-boot-v3/build/
 /.idea/
-/quarkus-flying-saucer-pdf/target/
+/quarkus-flying-saucer-pdf-aws-sam/target/
+/quarkus-flying-saucer-pdf-aws-sam/quarkus-flying-saucer-pdf.iml
