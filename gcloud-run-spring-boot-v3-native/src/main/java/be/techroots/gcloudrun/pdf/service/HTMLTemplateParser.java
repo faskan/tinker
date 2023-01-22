@@ -7,8 +7,6 @@ import org.thymeleaf.context.Context;
 import org.thymeleaf.spring6.SpringTemplateEngine;
 import org.thymeleaf.templateresolver.UrlTemplateResolver;
 
-import java.io.IOException;
-
 @Component
 public class HTMLTemplateParser {
 
@@ -21,7 +19,7 @@ public class HTMLTemplateParser {
         templateEngine.addTemplateResolver(resolver);
     }
 
-    public String parseHtmlTemplate(String templateUrl, Object pdfRequest) throws IOException { //quarkus qute template
+    public String parseHtmlTemplate(String templateUrl, Object pdfRequest) {
         Context context = new Context();
         context.setVariable("invoice", pdfRequest);
         return templateEngine.process(templateUrl, context);
